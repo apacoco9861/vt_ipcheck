@@ -1,4 +1,3 @@
-# cat vt.py
 #!/usr/bin/python
 import json
 import urllib
@@ -6,14 +5,14 @@ import time
 import pymongo
 import sys
 
-APIKEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+APIKEY=''
 str_replace1 = 'u\''
 replace_str1 = '\''
 str_replace2 = '\''
 replace_str2 = '\"'
 
 #import to mongodb
-uri = "mongodb://username:password@127.0.0.1/?authSource=dbname&authMechanism=SCRAM-SHA-256"
+uri = "mongodb://username:password@127.0.0.1/?authSource=blacklist&authMechanism=SCRAM-SHA-256"
 myconnection = pymongo.MongoClient(uri)
 mydb = myconnection["blacklist"]
 #mycol = mydb["ip"]
